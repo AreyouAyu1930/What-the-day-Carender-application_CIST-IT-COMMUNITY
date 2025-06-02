@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ month }}月{{ day }}日は何の日？</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ month }}月{{ day }}日は何の日？</h1>
+    <div>
+        <a href="/?month={{ month }}&day={{ day - 1 }}">前の日</a>
+        |
+        <a href="/?month={{ month }}&day={{ day + 1 }}">次の日</a>
+    </div>
+    <br>
+    
+</body>
+</html>
