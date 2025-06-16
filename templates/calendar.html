@@ -21,9 +21,9 @@
 <body>
     <h1>{{ year }}年{{ month }}月のカレンダー</h1>
     <div>
-        <a href="/?year={{ year }}&month={{ month - 1 }}">前月</a>
+        <a href="/calendar?year={{ year }}&month={{ month - 1 }}">前月</a>
         |
-        <a href="/?year={{ year }}&month={{ month + 1 }}">次月</a>
+        <a href="/calendar?year={{ year }}&month={{ month + 1 }}">次月</a>
     </div>
     <br>
     {{ calendar_html|safe }}
